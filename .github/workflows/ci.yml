@@ -18,7 +18,12 @@ jobs:
           python-version: ${{ matrix.python-version }}
       - run: pip install -e ".[dev]"
       - run: ruff check . && ruff format --check .
-      - run: pytest -q
+      - name: Type check (mypy)
+        run: mypy --ignore-missing-imports src
+      - name: Tests with coverage (fails under 80%)
+        run: pytest -q --cov=bugreport --cov-report=term-missing --cov-fail-under=80
+      - name: Dependency vulnerability audit
+        run: pip-audit --skip-editable
       - name: Demo (scripted model, no GPU)
         run: |
           bugreport "the discount thing is broken on my phone" --provider fake \

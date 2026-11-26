@@ -95,7 +95,7 @@ def main(argv: list[str] | None = None) -> int:
     before = completeness(draft)
     print(f"Completeness: {before}/100. Missing: {', '.join(gaps) or 'nothing'}", file=sys.stderr)
 
-    questions = QUESTIONS if helper is None else None
+    questions: dict[str, str] = QUESTIONS
     if helper and gaps:
         try:
             questions = parse_questions(helper.questions(description, gaps), gaps)
