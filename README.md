@@ -1,4 +1,4 @@
-# 🐛 bug-report-enhancer
+# bug-report-enhancer
 
 ![CI](https://github.com/Kurtis-H/bug-report-enhancer/actions/workflows/ci.yml/badge.svg)
 
