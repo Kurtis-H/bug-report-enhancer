@@ -1,0 +1,6 @@
+[
+  {"id": 12, "title": "Discount code can be applied more than once in cart", "body": "Clicking Apply repeatedly stacks the SAVE10 discount on the cart total."},
+  {"id": 15, "title": "Tax rounding is off by a cent", "body": "Cart tax is truncated instead of rounded."},
+  {"id": 21, "title": "Search results show stale results when typing fast", "body": "Older search responses overwrite newer ones."},
+  {"id": 30, "title": "Login button misaligned on mobile", "body": "Cosmetic: the login button overlaps the logo on small screens."}
+]

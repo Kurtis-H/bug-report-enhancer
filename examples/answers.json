@@ -1,0 +1,8 @@
+{
+  "steps": "Added the USB-C Hub to the cart, opened the cart, entered code SAVE10, then tapped Apply twice",
+  "expected": "The 10% discount applied once, total $89.60",
+  "actual": "The discount was applied twice and the total showed $81.15",
+  "environment": "Android phone, Samsung Galaxy, the store website in the browser",
+  "frequency": "Every time I tap Apply more than once",
+  "evidence": "screenshot-cart.png"
+}
